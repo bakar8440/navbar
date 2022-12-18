@@ -1,0 +1,57 @@
+/* common css start */
+h1,h2,h3,h4,h5,h6,
+p,
+small,span,
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+   list-style-type:none ;
+}
+
+body{
+    font-family:  'Open Sans', sans-serif;
+}
+
+/* common css end */
+/* nav bar css start */
+#myNav{
+    background-color: #02918b;
+}
+
+#myNav #myMenu ul li  a{
+    font-size: 12px;
+font-weight: 800;
+color: white;
+text-transform: uppercase;
+padding: 21px 25px;
+transition: .6s;
+}
+
+#myNav #myMenu ul li:hover a{
+    background: #cfc91d;
+    color:black;
+ }
+
+/* nav bar css end */
+/* banner section css start */
+#banner{
+    background: url(../image/banner_bg.jpg);
+    height: 730px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #000400;
+    opacity: .66;
+    z-index: -1;
+ }
+/* banner section css end */
